@@ -92,7 +92,6 @@
 				4C3862A32A758819005C9C3B /* AppDelegate.swift */,
 				AA1FF51A2B858063009C53F4 /* AppCoordinator.swift */,
 				AA1FF51C2B85823E009C53F4 /* RootCoordinator.swift */,
-				AA1FF5202B85834D009C53F4 /* SessionCoordinator.swift */,
 			);
 			path = Start;
 			sourceTree = "<group>";
@@ -110,6 +109,7 @@
 		4C3862B92A758A98005C9C3B /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				AAA8BE982B86296600E807FF /* SessionCoordinator */,
 				AA1FF5072B856EBC009C53F4 /* Scene */,
 			);
 			path = Features;
@@ -225,6 +225,14 @@
 				AAA8BE942B86233500E807FF /* ProfileCoordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		AAA8BE982B86296600E807FF /* SessionCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				AA1FF5202B85834D009C53F4 /* SessionCoordinator.swift */,
+			);
+			path = SessionCoordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

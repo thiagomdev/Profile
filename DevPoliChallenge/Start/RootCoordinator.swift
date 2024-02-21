@@ -18,7 +18,7 @@ final class RootCoordinator: RootCoordinating {
             options: .transitionCrossDissolve,
             animations: { [weak self] in
                 guard let self else { return }
-                window.rootViewController = _ viewController
+                window.rootViewController = viewController
                 window.makeKeyAndVisible()
                 window.layoutSubviews()
             }

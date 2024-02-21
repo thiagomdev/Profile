@@ -28,7 +28,7 @@ extension SessionCoordinator: SessionCoordinating {
     }
     
     func displayProfile() {
-        let profile = ProfileViewController()
-        rootCoordinator.didDisplay(profile)
+        let profile = ProfileFactory.make(sessionCoordinator: self)
+        rootCoordinator.didDisplay(profile) 
     }
 }

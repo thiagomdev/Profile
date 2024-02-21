@@ -44,7 +44,7 @@ extension SessionCoordinator: SessionCoordinating {
     }
     
     func displayUserInfo() {
-        let userInfo = UserInfoViewController()
+        let userInfo = UserInfoFactory.make(sessionCoordinator: self)
         rootCoordinator.didDisplay(userInfo)
     }
     
@@ -60,7 +60,7 @@ extension SessionCoordinator: SessionCoordinating {
     
     func displayViews() -> Int {
         let myAccount = MyAccountFactory.make(sessionCoordinator: self)
-        let userInfo = UserInfoViewController()
+        let userInfo = UserInfoFactory.make(sessionCoordinator: self)
         let address = AddressViewController()
         let cards = CardViewController()
         let allViews: [UIViewController] = [myAccount, userInfo, address, cards]

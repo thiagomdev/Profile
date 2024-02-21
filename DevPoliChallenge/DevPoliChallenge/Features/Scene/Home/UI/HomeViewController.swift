@@ -22,8 +22,6 @@ final class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        buildViews()
-        pin()
         setup()
     }
     
@@ -39,12 +37,12 @@ extension HomeViewController {
     }
 }
 
-extension HomeViewController {
-    private func buildViews() {
+extension HomeViewController: ViewConfig {
+    func buildViews() {
         view.addSubview(startButton)
     }
     
-    private func pin() {
+    func pin() {
         NSLayoutConstraint.pin([
             startButton.centerXAnchor.constraint(
                 equalTo: view.centerXAnchor
@@ -61,7 +59,7 @@ extension HomeViewController {
         ])
     }
     
-    private func setup() {
+    func extraSetup() {
         view.backgroundColor = .systemBackground
     }
 }

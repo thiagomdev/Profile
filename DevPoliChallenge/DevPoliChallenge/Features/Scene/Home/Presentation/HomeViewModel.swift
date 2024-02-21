@@ -6,7 +6,7 @@ protocol HomeViewModeling {
 
 final class HomeViewModel {
     private var dataObject: [AccountDataObject]
-    private var coordinator: HomeCoordinating
+    private let coordinator: HomeCoordinating
     
     init(
         coordinator: HomeCoordinating,

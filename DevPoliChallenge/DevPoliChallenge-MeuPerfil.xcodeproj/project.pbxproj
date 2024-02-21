@@ -20,6 +20,9 @@
 		AA1FF5212B85834D009C53F4 /* SessionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1FF5202B85834D009C53F4 /* SessionCoordinator.swift */; };
 		AA1FF5252B858896009C53F4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1FF5242B858896009C53F4 /* ProfileViewController.swift */; };
 		AA1FF5282B861E91009C53F4 /* NSLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1FF5272B861E91009C53F4 /* NSLayout.swift */; };
+		AAA8BE932B8622FB00E807FF /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA8BE922B8622FB00E807FF /* ProfileViewModel.swift */; };
+		AAA8BE952B86233500E807FF /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA8BE942B86233500E807FF /* ProfileCoordinator.swift */; };
+		AAA8BE972B86249400E807FF /* ProfileFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA8BE962B86249400E807FF /* ProfileFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,9 @@
 		AA1FF5202B85834D009C53F4 /* SessionCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionCoordinator.swift; sourceTree = "<group>"; };
 		AA1FF5242B858896009C53F4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		AA1FF5272B861E91009C53F4 /* NSLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayout.swift; sourceTree = "<group>"; };
+		AAA8BE922B8622FB00E807FF /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		AAA8BE942B86233500E807FF /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		AAA8BE962B86249400E807FF /* ProfileFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +179,9 @@
 		AA1FF5222B85887B009C53F4 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				AAA8BE912B8622D900E807FF /* Coordinator */,
+				AAA8BE902B8622D500E807FF /* Factory */,
+				AAA8BE8F2B8622D200E807FF /* Presentation */,
 				AA1FF5232B858886009C53F4 /* UI */,
 			);
 			path = Profile;
@@ -192,6 +201,30 @@
 				AA1FF5272B861E91009C53F4 /* NSLayout.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		AAA8BE8F2B8622D200E807FF /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				AAA8BE922B8622FB00E807FF /* ProfileViewModel.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		AAA8BE902B8622D500E807FF /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				AAA8BE962B86249400E807FF /* ProfileFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		AAA8BE912B8622D900E807FF /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				AAA8BE942B86233500E807FF /* ProfileCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,11 +300,14 @@
 			files = (
 				AA1FF5282B861E91009C53F4 /* NSLayout.swift in Sources */,
 				AA1FF51B2B858063009C53F4 /* AppCoordinator.swift in Sources */,
+				AAA8BE972B86249400E807FF /* ProfileFactory.swift in Sources */,
 				AA1FF5212B85834D009C53F4 /* SessionCoordinator.swift in Sources */,
 				AA1FF5252B858896009C53F4 /* ProfileViewController.swift in Sources */,
 				AA1FF50E2B8579FA009C53F4 /* HomeViewModel.swift in Sources */,
 				4C3862A42A758819005C9C3B /* AppDelegate.swift in Sources */,
+				AAA8BE932B8622FB00E807FF /* ProfileViewModel.swift in Sources */,
 				AA1FF5142B857BEF009C53F4 /* HomeFactory.swift in Sources */,
+				AAA8BE952B86233500E807FF /* ProfileCoordinator.swift in Sources */,
 				AA1FF5112B857AB1009C53F4 /* AccountDataObject.swift in Sources */,
 				AA1FF51F2B8582FD009C53F4 /* HomeCoordinator.swift in Sources */,
 				AA1FF50B2B856FDA009C53F4 /* HomeViewController.swift in Sources */,

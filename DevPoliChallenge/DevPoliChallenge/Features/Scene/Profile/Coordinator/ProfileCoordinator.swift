@@ -1,10 +1,10 @@
 import UIKit
 
-protocol HomeCoordinating {
-    func openProfile()
+protocol ProfileCoordinating {
+    func doSomething()
 }
 
-final class HomeCoordinator {
+final class ProfileCoordinator {
     private let sessionCoordinator: SessionCoordinating
     
     init(sessionCoordinator: SessionCoordinating) {
@@ -12,8 +12,8 @@ final class HomeCoordinator {
     }
 }
 
-extension HomeCoordinator: HomeCoordinating {
-    func openProfile() {
+extension ProfileCoordinator: ProfileCoordinating {
+    func doSomething() {
         sessionCoordinator.displayProfile()
     }
 }

@@ -7,6 +7,8 @@ protocol SessionCoordinating {
     func displayUserInfo()
     func displayAddress()
     func displayCards()
+    
+    func displayViews() -> Int
 }
 
 final class SessionCoordinator {
@@ -54,5 +56,15 @@ extension SessionCoordinator: SessionCoordinating {
     func displayCards() {
         let cards = CardViewController()
         rootCoordinator.didDisplay(cards)
+    }
+    
+    func displayViews() -> Int {
+        let myAccount = MyAccountFactory.make(sessionCoordinator: self)
+        let userInfo = UserInfoViewController()
+        let address = AddressViewController()
+        let cards = CardViewController()
+        let allViews: [UIViewController] = [myAccount, userInfo, address, cards]
+        navigation.setViewControllers(allViews, animated: true)
+        return allViews.count
     }
 }

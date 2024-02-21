@@ -2,6 +2,7 @@ import Foundation
 
 protocol ProfileViewModeling {
     func displayView(basedOn index: [Int])
+    func displayNumberOfRows() -> Int
 }
 
 final class ProfileViewModel {
@@ -14,8 +15,8 @@ final class ProfileViewModel {
 
 extension ProfileViewModel: ProfileViewModeling {
     func displayView(basedOn index: [Int]) {
-        index.forEach { path in
-            switch path {
+        index.forEach { indexPath in
+            switch indexPath {
             case 0:
                 coordinator.openMyAccount()
             case 1:
@@ -28,5 +29,9 @@ extension ProfileViewModel: ProfileViewModeling {
                 break
             }
         }
+    }
+    
+    func displayNumberOfRows() -> Int {
+        coordinator.showViews()
     }
 }

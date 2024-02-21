@@ -5,6 +5,7 @@ protocol ProfileCoordinating {
     func openUserInfo()
     func openAddress()
     func openCards()
+    func showViews() -> Int
 }
 
 final class ProfileCoordinator {
@@ -30,5 +31,9 @@ extension ProfileCoordinator: ProfileCoordinating {
     
     func openCards() {
         sessionCoordinator.displayCards()
+    }
+    
+    func showViews() -> Int {
+        sessionCoordinator.displayViews()
     }
 }

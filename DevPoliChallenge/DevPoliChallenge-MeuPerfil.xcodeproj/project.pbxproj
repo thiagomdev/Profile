@@ -32,6 +32,9 @@
 		AAA8BEB22B86485A00E807FF /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA8BEB12B86485A00E807FF /* CardViewController.swift */; };
 		AAA8BEB52B86632500E807FF /* MyAccountCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA8BEB42B86632500E807FF /* MyAccountCoordinator.swift */; };
 		AAA8BEB82B86649E00E807FF /* MyAccountFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA8BEB72B86649E00E807FF /* MyAccountFactory.swift */; };
+		AAA8BEBD2B868C5000E807FF /* UserInfoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA8BEBC2B868C5000E807FF /* UserInfoCoordinator.swift */; };
+		AAA8BEBF2B868CD300E807FF /* UserInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA8BEBE2B868CD300E807FF /* UserInfoViewModel.swift */; };
+		AAA8BEC12B868D2700E807FF /* UserInfoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA8BEC02B868D2700E807FF /* UserInfoFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +66,9 @@
 		AAA8BEB12B86485A00E807FF /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		AAA8BEB42B86632500E807FF /* MyAccountCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountCoordinator.swift; sourceTree = "<group>"; };
 		AAA8BEB72B86649E00E807FF /* MyAccountFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountFactory.swift; sourceTree = "<group>"; };
+		AAA8BEBC2B868C5000E807FF /* UserInfoCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoCoordinator.swift; sourceTree = "<group>"; };
+		AAA8BEBE2B868CD300E807FF /* UserInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewModel.swift; sourceTree = "<group>"; };
+		AAA8BEC02B868D2700E807FF /* UserInfoFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -305,6 +311,9 @@
 		AAA8BEA82B8647F100E807FF /* UserInfo */ = {
 			isa = PBXGroup;
 			children = (
+				AAA8BEBB2B868C1700E807FF /* Coordinator */,
+				AAA8BEBA2B868C1500E807FF /* Factory */,
+				AAA8BEB92B868C1200E807FF /* Presentation */,
 				AAA8BEA92B86481C00E807FF /* UI */,
 			);
 			path = UserInfo;
@@ -348,6 +357,30 @@
 				AAA8BEB72B86649E00E807FF /* MyAccountFactory.swift */,
 			);
 			path = Factory;
+			sourceTree = "<group>";
+		};
+		AAA8BEB92B868C1200E807FF /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				AAA8BEBE2B868CD300E807FF /* UserInfoViewModel.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		AAA8BEBA2B868C1500E807FF /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				AAA8BEC02B868D2700E807FF /* UserInfoFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		AAA8BEBB2B868C1700E807FF /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				AAA8BEBC2B868C5000E807FF /* UserInfoCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -433,13 +466,16 @@
 				AAA8BE9A2B8638D000E807FF /* ViewConfig.swift in Sources */,
 				AAA8BEB22B86485A00E807FF /* CardViewController.swift in Sources */,
 				4C3862A42A758819005C9C3B /* AppDelegate.swift in Sources */,
+				AAA8BEBF2B868CD300E807FF /* UserInfoViewModel.swift in Sources */,
 				AAA8BE932B8622FB00E807FF /* ProfileViewModel.swift in Sources */,
 				AA1FF5142B857BEF009C53F4 /* HomeFactory.swift in Sources */,
+				AAA8BEC12B868D2700E807FF /* UserInfoFactory.swift in Sources */,
 				AAA8BEA52B86453600E807FF /* MyAccountViewModel.swift in Sources */,
 				AAA8BE952B86233500E807FF /* ProfileCoordinator.swift in Sources */,
 				AA1FF5112B857AB1009C53F4 /* AccountDataObject.swift in Sources */,
 				AA1FF51F2B8582FD009C53F4 /* HomeCoordinator.swift in Sources */,
 				AAA8BE9E2B86406100E807FF /* ProfileCell.swift in Sources */,
+				AAA8BEBD2B868C5000E807FF /* UserInfoCoordinator.swift in Sources */,
 				AA1FF50B2B856FDA009C53F4 /* HomeViewController.swift in Sources */,
 				AAA8BEA22B8642E600E807FF /* MyAccountViewController.swift in Sources */,
 				AA1FF51D2B85823E009C53F4 /* RootCoordinator.swift in Sources */,

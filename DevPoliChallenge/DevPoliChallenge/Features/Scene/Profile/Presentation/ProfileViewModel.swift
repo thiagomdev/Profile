@@ -1,7 +1,7 @@
 import Foundation
 
 protocol ProfileViewModeling {
-    func displaySomething()
+    func displayView(basedOn index: [Int])
 }
 
 final class ProfileViewModel {
@@ -13,7 +13,20 @@ final class ProfileViewModel {
 }
 
 extension ProfileViewModel: ProfileViewModeling {
-    func displaySomething() {
-        coordinator.doSomething()
+    func displayView(basedOn index: [Int]) {
+        index.forEach { path in
+            switch path {
+            case 0:
+                coordinator.openMyAccount()
+            case 1:
+                coordinator.openUserInfo()
+            case 2:
+                coordinator.openAddress()
+            case 3:
+                coordinator.openCards()
+            default:
+                break
+            }
+        }
     }
 }

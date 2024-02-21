@@ -1,7 +1,10 @@
 import UIKit
 
 protocol ProfileCoordinating {
-    func doSomething()
+    func openMyAccount()
+    func openUserInfo()
+    func openAddress()
+    func openCards()
 }
 
 final class ProfileCoordinator {
@@ -13,7 +16,19 @@ final class ProfileCoordinator {
 }
 
 extension ProfileCoordinator: ProfileCoordinating {
-    func doSomething() {
-        sessionCoordinator.displayProfile()
+    func openMyAccount() {
+        sessionCoordinator.displayMyAccount()
+    }
+    
+    func openUserInfo() {
+        sessionCoordinator.displayUserInfo()
+    }
+    
+    func openAddress() {
+        sessionCoordinator.displayAddress()
+    }
+    
+    func openCards() {
+        sessionCoordinator.displayCards()
     }
 }
